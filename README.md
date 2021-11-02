@@ -7,10 +7,12 @@ A script to create a gene-focussed BrigdeDb database based on Ensembl BioMART.
 Installation
 ============
 
-Compile the code:
+Java 11 is required.
+
+Compile the code with:
 
 ```shell
-mvn clean assembly:single
+mvn clean install
 cp target/org.bridgedb.genedb-jar-with-dependencies.jar BioMart2BridgeDb.jar
 ``` 
 
