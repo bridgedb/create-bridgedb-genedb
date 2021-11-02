@@ -32,6 +32,7 @@
 					<finalName>org.bridgedb.genedb</finalName>
 					<archive>
 						<manifest>
+							<addClasspath>true</addClasspath>
 							<mainClass>org.bridgedb.creator.Main</mainClass>
 						</manifest>
 					</archive>
