@@ -1,3 +1,4 @@
+[![Java CI with Maven](https://github.com/bridgedb/create-bridgedb-genedb/actions/workflows/maven.yml/badge.svg)](https://github.com/bridgedb/create-bridgedb-genedb/actions/workflows/maven.yml)
 # BridgeDb database building for gene databases
 
 Introduction
