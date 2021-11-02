@@ -8,8 +8,11 @@
 	<packaging>jar</packaging>
 	<version>0.0.1</version>
 
-
 	<name>Create Ensembl Bridge bundle</name>
+
+	<properties>
+		<java.version>11</java.version>
+	</properties>
 
 	<build>
 		<finalName>BioMart2BridgeDb</finalName>
