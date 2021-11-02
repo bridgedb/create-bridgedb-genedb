@@ -82,11 +82,5 @@
 			<artifactId>org.bridgedb.tools.qc</artifactId>
 			<version>3.0.5</version>
 		</dependency>
-		<dependency>
-			<groupId>org.bridgedb</groupId>
-			<artifactId>org.bridgedb.tools.qc</artifactId>
-			<version>3.0.5</version>
-		</dependency>
-
 	</dependencies>
 </project>
