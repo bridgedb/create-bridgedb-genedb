@@ -1,4 +1,5 @@
 affy_bovine	Affymetrix probe id	Affymetrix	X
+affy_chicken	Affymetrix probe id	Affymetrix	X
 affy_hc_g110	Affymetrix probe id	Affymetrix	X
 affy_hg_focus	Affymetrix probe id	Affymetrix	X
 affy_hg_u133_plus_2	Affymetrix probe id	Affymetrix	X
@@ -47,6 +48,7 @@ affy_u133_x3p	Affymetrix probe id	Affymetrix	X
 affy_zebgene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_zebgene_1_1_st_v1	Affymetrix probe id	Affymetrix	X
 affy_zebrafish	Affymetrix probe id	Affymetrix	X
+agilent_059389_chicken_ge_8x60k	Agilent probe id	Agilent	Ag
 agilent_cgh_44b	Agilent probe id	Agilent	Ag
 agilent_g2518a	Agilent probe id	Agilent	Ag
 agilent_g2519f	Agilent probe id	Agilent	Ag
