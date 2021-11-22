@@ -1,42 +1,73 @@
-ensembl_gene_id	Ensembl Gene ID	Ensembl	En
+affy_hc_g110	Affymetrix probe id	Affymetrix	X
+affy_hg_focus	Affymetrix probe id	Affymetrix	X
+affy_hg_u133_plus_2	Affymetrix probe id	Affymetrix	X
+affy_hg_u133a	Affymetrix probe id	Affymetrix	X
+affy_hg_u133a_2	Affymetrix probe id	Affymetrix	X
+affy_hg_u133b	Affymetrix probe id	Affymetrix	X
+affy_hg_u95a	Affymetrix probe id	Affymetrix	X
+affy_hg_u95av2	Affymetrix probe id	Affymetrix	X
+affy_hg_u95b	Affymetrix probe id	Affymetrix	X
+affy_hg_u95c	Affymetrix probe id	Affymetrix	X
+affy_hg_u95d	Affymetrix probe id	Affymetrix	X
+affy_hg_u95e	Affymetrix probe id	Affymetrix	X
+affy_hta_2_0	Affymetrix probe id	Affymetrix	X
+affy_huex_1_0_st_v2	Affymetrix probe id	Affymetrix	X
+affy_hugene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_hugene_2_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_hugenefl	Affymetrix probe id	Affymetrix	X
+affy_primeview	Affymetrix probe id	Affymetrix	X
+affy_u133_x3p	Affymetrix probe id	Affymetrix	X
+agilent_cgh_44b	Agilent probe id	Agilent	Ag
+agilent_gpl26966	Agilent probe id	Agilent	Ag
+agilent_gpl6848	Agilent probe id	Agilent	Ag
+agilent_sureprint_g3_ge_8x60k	Agilent probe id	Agilent	Ag
+agilent_sureprint_g3_ge_8x60k_v2	Agilent probe id	Agilent	Ag
+agilent_wholegenome	Agilent probe id	Agilent	Ag
+agilent_wholegenome_4x44k_v1	Agilent probe id	Agilent	Ag
+agilent_wholegenome_4x44k_v2	Agilent probe id	Agilent	Ag
 biocyc	BioCyc ID	BioCyc	Bc
-go_id	GO Term Accession	GeneOntology	T
-go_accession	GO term accession	GeneOntology	T
 ccds	CCDS ID	CCDS	Cc
 embl	EMBL (Genbank) ID	EMBL	Em
+ensembl_gene_id	Ensembl Gene ID	Ensembl	En
 entrezgene	EntrezGene ID	Entrez Gene	L
 entrezgene_id	EntrezGene ID	Entrez Gene	L
 flybase_gene_id	FlyBase Gene ID	FlyBase	F
 flybase_transcript_id	FlyBase Transcript ID	FlyBase	F
 flybase_translation_id	FlyBase Protein ID	FlyBase	F
-gramene_pathway	Gramene Pathway ID	Gramene Pathway	Gp
+go_accession	GO term accession	GeneOntology	T
+go_id	GO Term Accession	GeneOntology	T
 gramene_markersdb_est	Gramene MarkersDB EST ID	Gramene Genes DB	Gg
 gramene_markersdb_mrna	Gramene MarkersDB mRNA ID	Gramene Genes DB	Gg
+gramene_pathway	Gramene Pathway ID	Gramene Pathway	Gp
 hgnc_id	HGNC ID(s)	HGNC Accession number	Hac
 hgnc_symbol	HGNC symbol	HGNC	H
+illumina_humanht_12_v3	Ilumina probe id	Illumina	Il
+illumina_humanht_12_v4	Ilumina probe id	Illumina	Il
+illumina_humanref_8_v3	Ilumina probe id	Illumina	Il
+illumina_humanwg_6_v1	Ilumina probe id	Illumina	Il
+illumina_humanwg_6_v2	Ilumina probe id	Illumina	Il
+illumina_humanwg_6_v3	Ilumina probe id	Illumina	Il
 irgsp	IRGSP ID	IRGSP Gene	Ir
 metacyc	MetaCyc ID	MetaCyc	Mc
 mgi_id	MGI ID	MGI	M
-mgi_transcript_name	MGI transcript name	MGI	M
 mgi_symbol	MGI symbol	MGI	M
-mim_morbid_accession	MIM Morbid Accession	OMIM	Om
+mgi_transcript_name	MGI transcript name	MGI	M
 mim_gene_accession	MIM Gene Accession	OMIM	Om
-mirbase_accession	miRBase Accession(s)	miRBase Sequence	Mb
+mim_morbid_accession	MIM Morbid Accession	OMIM	Om
+mirbase_id	miRBase ID(s)	miRBase Sequence	Mb
 mirbase	miRBase ID(s)	miRBase Sequence	Mb
+mirbase_accession	miRBase Accession(s)	miRBase Sequence	Mb
 nasc_gene_id	NASC gene ID	NASC Gene	N
 pdb	PDB ID	PDB	Pd
 plantgdb_put	PlantGDB PUT ID	PlantGDB	Pl
 protein_id	Protein (Genbank) ID	NCBI Protein	Np
 reactome	Reactome ID	Reactome	Re
 refseq_dna_predicted	RefSeq DNA (predicted) ID	RefSeq	Q
-refseq_mrna	RefSeq mRNA [e.g. NM_001195597]	RefSeq	Q
 refseq_mrna	RefSeq mRNA ID	RefSeq	Q
 refseq_mrna_predicted	RefSeq mRNA predicted [e.g. XM_001125684]	RefSeq	Q
 refseq_mrna_predicted	RefSeq mRNA (predicted) ID	RefSeq	Q
-refseq_ncrna	RefSeq ncRNA [e.g. NR_002834]	RefSeq	Q
 refseq_ncrna	RefSeq ncRNA ID	RefSeq	Q
 refseq_ncrna_predicted	RefSeq ncRNA predicted [e.g. XR_108264]	RefSeq	Q
-refseq_peptide	RefSeq Protein ID [e.g. NP_001005353]	RefSeq	Q
 refseq_peptide	RefSeq protein ID	RefSeq	Q
 refseq_peptide_predicted	RefSeq Predicted Protein ID [e.g. XP_001720922]	RefSeq	Q
 refseq_peptide_predicted	RefSeq protein (predicted) ID	RefSeq	Q
@@ -51,14 +82,10 @@ tigr_locus	MSU/TIGR locus	TIGR	Ti
 ucsc	UCSC ID	UCSC Genome Browser	Uc
 unigene	Unigene ID	UniGene	U
 uniprot_sptrembl	UniProt/TrEMBL Accession	Uniprot-TrEMBL	S
-uniprot_sptrembl	UniProtKB/TrEMBL ID	Uniprot-TrEMBL	S
-uniprot_sptrembl	UniProt/TrEMBL ID	Uniprot-TrEMBL	S
+uniprot_swissprot	UniProt/SwissProt ID	Uniprot-TrEMBL	S
+uniprot_swissprot_accession	UniProt/SwissProt Accession	Uniprot-TrEMBL	S
 uniprotsptrembl	UniProt/TrEMBL ID	Uniprot-TrEMBL	S
-uniprotswissprot	UniProt/SwissProt Accession	Uniprot-SwissProt	Sp
-uniprot_swissprot_accession	UniProt/SwissProt Accession	Uniprot-SwissProt	Sp
-uniprot_swissprot_accession	UniProtKB/SwissProt ID	Uniprot-SwissProt	Sp
-uniprot_swissprot_accession	UniProt/SwissProt ID	Uniprot-SwissProt	Sp
-uniprot_swissprot	UniProt/SwissProt ID	Uniprot-SwissProt	Sp
+uniprotswissprot	UniProt/SwissProt Accession	Uniprot-TrEMBL	S
 wikigene_id	WikiGene ID	WikiGenes	Wg
 wormbase_gene	WormBase Gene Accession	WormBase	W
 zfin_id	ZFIN ID	ZFIN	Z
