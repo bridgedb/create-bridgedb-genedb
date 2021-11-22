@@ -31,6 +31,17 @@ affy_mouse430a_2	Affymetrix probe id	Affymetrix	X
 affy_mu11ksuba	Affymetrix probe id	Affymetrix	X
 affy_mu11ksubb	Affymetrix probe id	Affymetrix	X
 affy_primeview	Affymetrix probe id	Affymetrix	X
+affy_rae230a	Affymetrix probe id	Affymetrix	X
+affy_rae230b	Affymetrix probe id	Affymetrix	X
+affy_raex_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_ragene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_ragene_2_1_st_v1	Affymetrix probe id	Affymetrix	X
+affy_rat230_2	Affymetrix probe id	Affymetrix	X
+affy_rg_u34a	Affymetrix probe id	Affymetrix	X
+affy_rg_u34b	Affymetrix probe id	Affymetrix	X
+affy_rg_u34c	Affymetrix probe id	Affymetrix	X
+affy_rn_u34	Affymetrix probe id	Affymetrix	X
+affy_rt_u34	Affymetrix probe id	Affymetrix	X
 affy_u133_x3p	Affymetrix probe id	Affymetrix	X
 agilent_cgh_44b	Agilent probe id	Agilent	Ag
 agilent_gpl26966	Agilent probe id	Agilent	Ag
@@ -40,6 +51,7 @@ agilent_sureprint_g3_ge_8x60k_v2	Agilent probe id	Agilent	Ag
 agilent_wholegenome	Agilent probe id	Agilent	Ag
 agilent_wholegenome_4x44k_v1	Agilent probe id	Agilent	Ag
 agilent_wholegenome_4x44k_v2	Agilent probe id	Agilent	Ag
+agilent_wholegenome_4x44k_v3	Agilent probe id	Agilent	Ag
 biocyc	BioCyc ID	BioCyc	Bc
 ccds	CCDS ID	CCDS	Cc
 embl	EMBL (Genbank) ID	EMBL	Em
@@ -65,6 +77,7 @@ illumina_humanwg_6_v3	Ilumina probe id	Illumina	Il
 illumina_mouseref_8	Ilumina probe id	Illumina	Il
 illumina_mousewg_6_v1	Ilumina probe id	Illumina	Il
 illumina_mousewg_6_v2	Ilumina probe id	Illumina	Il
+illumina_ratref_12_v1	Ilumina probe id	Illumina	Il
 irgsp	IRGSP ID	IRGSP Gene	Ir
 metacyc	MetaCyc ID	MetaCyc	Mc
 mgi_id	MGI ID	MGI	M
@@ -92,6 +105,7 @@ refseq_peptide_predicted	RefSeq protein (predicted) ID	RefSeq	Q
 rfam	Rfam ID	Rfam	Rf
 rfam_transcript_name	Rfam transcript name	Rfam	Rf
 rgd	RGD ID	RGD	R
+rgd_id	RGD id	RGD	R
 rgd_transcript_name	RGD transcript name	RGD	R
 sgd_gene	SGD Gene	SGD	D
 sgd_transcript	SGD Transcript	SGD	D
