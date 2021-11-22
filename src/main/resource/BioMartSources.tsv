@@ -15,6 +15,21 @@ affy_huex_1_0_st_v2	Affymetrix probe id	Affymetrix	X
 affy_hugene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_hugene_2_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_hugenefl	Affymetrix probe id	Affymetrix	X
+affy_mg_u74a	Affymetrix probe id	Affymetrix	X
+affy_mg_u74av2	Affymetrix probe id	Affymetrix	X
+affy_mg_u74b	Affymetrix probe id	Affymetrix	X
+affy_mg_u74bv2	Affymetrix probe id	Affymetrix	X
+affy_mg_u74c	Affymetrix probe id	Affymetrix	X
+affy_mg_u74cv2	Affymetrix probe id	Affymetrix	X
+affy_moe430a	Affymetrix probe id	Affymetrix	X
+affy_moe430b	Affymetrix probe id	Affymetrix	X
+affy_moex_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_mogene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_mogene_2_1_st_v1	Affymetrix probe id	Affymetrix	X
+affy_mouse430_2	Affymetrix probe id	Affymetrix	X
+affy_mouse430a_2	Affymetrix probe id	Affymetrix	X
+affy_mu11ksuba	Affymetrix probe id	Affymetrix	X
+affy_mu11ksubb	Affymetrix probe id	Affymetrix	X
 affy_primeview	Affymetrix probe id	Affymetrix	X
 affy_u133_x3p	Affymetrix probe id	Affymetrix	X
 agilent_cgh_44b	Agilent probe id	Agilent	Ag
@@ -47,6 +62,9 @@ illumina_humanref_8_v3	Ilumina probe id	Illumina	Il
 illumina_humanwg_6_v1	Ilumina probe id	Illumina	Il
 illumina_humanwg_6_v2	Ilumina probe id	Illumina	Il
 illumina_humanwg_6_v3	Ilumina probe id	Illumina	Il
+illumina_mouseref_8	Ilumina probe id	Illumina	Il
+illumina_mousewg_6_v1	Ilumina probe id	Illumina	Il
+illumina_mousewg_6_v2	Ilumina probe id	Illumina	Il
 irgsp	IRGSP ID	IRGSP Gene	Ir
 metacyc	MetaCyc ID	MetaCyc	Mc
 mgi_id	MGI ID	MGI	M
@@ -54,9 +72,9 @@ mgi_symbol	MGI symbol	MGI	M
 mgi_transcript_name	MGI transcript name	MGI	M
 mim_gene_accession	MIM Gene Accession	OMIM	Om
 mim_morbid_accession	MIM Morbid Accession	OMIM	Om
-mirbase_id	miRBase ID(s)	miRBase Sequence	Mb
 mirbase	miRBase ID(s)	miRBase Sequence	Mb
 mirbase_accession	miRBase Accession(s)	miRBase Sequence	Mb
+mirbase_id	miRBase ID(s)	miRBase Sequence	Mb
 nasc_gene_id	NASC gene ID	NASC Gene	N
 pdb	PDB ID	PDB	Pd
 plantgdb_put	PlantGDB PUT ID	PlantGDB	Pl
