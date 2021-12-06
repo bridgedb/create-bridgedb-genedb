@@ -1,5 +1,7 @@
 affy_bovine	Affymetrix probe id	Affymetrix	X
 affy_chicken	Affymetrix probe id	Affymetrix	X
+affy_cyngene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_cyrgene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_hc_g110	Affymetrix probe id	Affymetrix	X
 affy_hg_focus	Affymetrix probe id	Affymetrix	X
 affy_hg_u133_plus_2	Affymetrix probe id	Affymetrix	X
@@ -42,6 +44,9 @@ affy_rat230_2	Affymetrix probe id	Affymetrix	X
 affy_rg_u34a	Affymetrix probe id	Affymetrix	X
 affy_rg_u34b	Affymetrix probe id	Affymetrix	X
 affy_rg_u34c	Affymetrix probe id	Affymetrix	X
+affy_rhegene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_rhegene_1_1_st_v1	Affymetrix probe id	Affymetrix	X
+affy_rhesus	Affymetrix probe id	Affymetrix	X
 affy_rn_u34	Affymetrix probe id	Affymetrix	X
 affy_rt_u34	Affymetrix probe id	Affymetrix	X
 affy_u133_x3p	Affymetrix probe id	Affymetrix	X
@@ -52,13 +57,17 @@ agilent_059389_chicken_ge_8x60k	Agilent probe id	Agilent	Ag
 agilent_cgh_44b	Agilent probe id	Agilent	Ag
 agilent_g2518a	Agilent probe id	Agilent	Ag
 agilent_g2519f	Agilent probe id	Agilent	Ag
+agilent_gpl10157	Agilent probe id	Agilent	Ag
+agilent_gpl10158	Agilent probe id	Agilent	Ag
 agilent_gpl14629	Agilent probe id	Agilent	Ag
 agilent_gpl14664	Agilent probe id	Agilent	Ag
 agilent_gpl15450	Agilent probe id	Agilent	Ag
 agilent_gpl15747	Agilent probe id	Agilent	Ag
 agilent_gpl15799	Agilent probe id	Agilent	Ag
+agilent_gpl17465	Agilent probe id	Agilent	Ag
 agilent_gpl17670	Agilent probe id	Agilent	Ag
 agilent_gpl17686	Agilent probe id	Agilent	Ag
+agilent_gpl19384	Agilent probe id	Agilent	Ag
 agilent_gpl20686	Agilent probe id	Agilent	Ag
 agilent_gpl20834	Agilent probe id	Agilent	Ag
 agilent_gpl20900	Agilent probe id	Agilent	Ag
