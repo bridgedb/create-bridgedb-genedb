@@ -1,7 +1,9 @@
 affy_bovine	Affymetrix probe id	Affymetrix	X
+affy_c_elegans	Affymetrix probe id	Affymetrix	X
 affy_chicken	Affymetrix probe id	Affymetrix	X
 affy_cyngene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_cyrgene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
+affy_gpl19230	Affymetrix probe id	Affymetrix	X
 affy_hc_g110	Affymetrix probe id	Affymetrix	X
 affy_hg_focus	Affymetrix probe id	Affymetrix	X
 affy_hg_u133_plus_2	Affymetrix probe id	Affymetrix	X
@@ -53,12 +55,18 @@ affy_u133_x3p	Affymetrix probe id	Affymetrix	X
 affy_zebgene_1_0_st_v1	Affymetrix probe id	Affymetrix	X
 affy_zebgene_1_1_st_v1	Affymetrix probe id	Affymetrix	X
 affy_zebrafish	Affymetrix probe id	Affymetrix	X
+agilent_012795	Agilent probe id	Agilent	Ag
+agilent_015061	Agilent probe id	Agilent	Ag
+agilent_020186	Agilent probe id	Agilent	Ag
 agilent_059389_chicken_ge_8x60k	Agilent probe id	Agilent	Ag
 agilent_cgh_44b	Agilent probe id	Agilent	Ag
 agilent_g2518a	Agilent probe id	Agilent	Ag
 agilent_g2519f	Agilent probe id	Agilent	Ag
 agilent_gpl10157	Agilent probe id	Agilent	Ag
 agilent_gpl10158	Agilent probe id	Agilent	Ag
+agilent_gpl13394	Agilent probe id	Agilent	Ag
+agilent_gpl13914	Agilent probe id	Agilent	Ag
+agilent_gpl14144	Agilent probe id	Agilent	Ag
 agilent_gpl14629	Agilent probe id	Agilent	Ag
 agilent_gpl14664	Agilent probe id	Agilent	Ag
 agilent_gpl15450	Agilent probe id	Agilent	Ag
@@ -68,6 +76,7 @@ agilent_gpl17465	Agilent probe id	Agilent	Ag
 agilent_gpl17670	Agilent probe id	Agilent	Ag
 agilent_gpl17686	Agilent probe id	Agilent	Ag
 agilent_gpl19384	Agilent probe id	Agilent	Ag
+agilent_gpl19516	Agilent probe id	Agilent	Ag
 agilent_gpl20686	Agilent probe id	Agilent	Ag
 agilent_gpl20834	Agilent probe id	Agilent	Ag
 agilent_gpl20900	Agilent probe id	Agilent	Ag
@@ -83,6 +92,7 @@ agilent_gpl7301	Agilent probe id	Agilent	Ag
 agilent_gpl7302	Agilent probe id	Agilent	Ag
 agilent_gpl7735	Agilent probe id	Agilent	Ag
 agilent_gpl7801	Agilent probe id	Agilent	Ag
+agilent_gpl8304	Agilent probe id	Agilent	Ag
 agilent_gpl9060	Agilent probe id	Agilent	Ag
 agilent_gpl9074	Agilent probe id	Agilent	Ag
 agilent_sureprint_g3_ge_8x60k	Agilent probe id	Agilent	Ag
