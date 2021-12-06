@@ -144,6 +144,7 @@ pdb	PDB ID	PDB	Pd
 plantgdb_put	PlantGDB PUT ID	PlantGDB	Pl
 protein_id	Protein (Genbank) ID	NCBI Protein	Np
 reactome	Reactome ID	Reactome	Re
+refseq_dna	RefSeq DNA ID	RefSeq	Q
 refseq_dna_predicted	RefSeq DNA (predicted) ID	RefSeq	Q
 refseq_mrna	RefSeq mRNA ID	RefSeq	Q
 refseq_mrna_predicted	RefSeq mRNA predicted [e.g. XM_001125684]	RefSeq	Q
