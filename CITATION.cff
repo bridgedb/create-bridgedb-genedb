@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the below paper."
+title: create-bridgedb-genedb
+url: "https://github.com/bridgedb/create-bridgedb-genedb"
+preferred-citation:
+  type: article
+  title: "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services"
+  authors:
+    - family-names: Waagmeester
+      given-names: Andra
+    - family-names: Willighagen
+      given-names: Egon L.
+    - family-names: Su
+      given-names: Andrew I.
+    - family-names: Kutmon
+      given-names: Martina
+    - family-names: Gayo
+      given-names: Jose Emilio Labra
+    - family-names: Fernández-Álvarez
+      given-names: Daniel
+    - family-names: Groom
+      given-names: Quentin
+    - family-names: Schaap
+      given-names: Peter J.
+    - family-names: Verhagen
+      given-names: Lisa M.
+    - family-names: Koehorst
+      given-names: Jasper J.
+  doi: 10.1186/S12915-020-00940-Y
+  year: 2021
+  month: 1
+  day: 22
+  journal: BMC Biology
+  volume: 19
+  issue: 12
+  url: https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-020-00940-y
