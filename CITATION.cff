@@ -6,31 +6,31 @@ preferred-citation:
   type: article
   title: "The BridgeDb framework: standardized access to gene, protein and metabolite identifier mapping services"
   authors:
-    - family-names: Waagmeester
-      given-names: Andra
-    - family-names: Willighagen
-      given-names: Egon L.
-    - family-names: Su
-      given-names: Andrew I.
-    - family-names: Kutmon
-      given-names: Martina
-    - family-names: Gayo
-      given-names: Jose Emilio Labra
-    - family-names: Fernández-Álvarez
-      given-names: Daniel
-    - family-names: Groom
-      given-names: Quentin
-    - family-names: Schaap
-      given-names: Peter J.
+    - family-names: Van lersel
+      given-names: Martijn P.
+    - family-names: Pico
+      given-names: Alexander R.
+    - family-names: Kelder
+      given-names: Thomas
+    - family-names: Gao
+      given-names: Jianjiong
+    - family-names: Ho
+      given-names: Isaac
+    - family-names: Hanspers
+      given-names: Kristina
+    - family-names: Conklin
+      given-names: Bruce R.
+    - family-names: Evelo
+      given-names: Chris T.
     - family-names: Verhagen
       given-names: Lisa M.
     - family-names: Koehorst
       given-names: Jasper J.
-  doi: 10.1186/S12915-020-00940-Y
-  year: 2021
+  doi: 10.1186/1471-2105-11-5
+  year: 2010
   month: 1
-  day: 22
-  journal: BMC Biology
-  volume: 19
-  issue: 12
-  url: https://bmcbiol.biomedcentral.com/articles/10.1186/s12915-020-00940-y
+  day: 4
+  journal: BMC Bioinformatics
+  volume: 11
+  issue: 5
+  url: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-11-5
