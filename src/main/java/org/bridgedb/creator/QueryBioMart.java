@@ -154,11 +154,7 @@ public class QueryBioMart {
 				geneId.setAttribute("name", "chromosome_name");
 				dataset.appendChild(geneId);
 				geneId = query.createElement("Attribute");
-				// Difference between the main Ensembl or the others(Plants...)
-				if (config.getSchema().equals("default"))
-					geneId.setAttribute("name", "external_gene_name");
-				else
-					geneId.setAttribute("name", "external_gene_id");
+				geneId.setAttribute("name", "external_gene_name");
 				dataset.appendChild(geneId);
 				geneId = query.createElement("Attribute");
 				geneId.setAttribute("name", "gene_biotype");
