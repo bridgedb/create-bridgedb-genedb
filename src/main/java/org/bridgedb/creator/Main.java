@@ -36,6 +36,7 @@ import org.bridgedb.tools.qc.BridgeQC;
 public class Main {
 	private static boolean qc;
 	private static boolean inclusive;
+	private static boolean chrGiven;
 	protected static Logger logger;
 
 	private static void printUsage() {
@@ -196,17 +197,25 @@ public class Main {
 		// Query the BioMart attributes for probes ids.
 		QueryBioMart.loadBiomartAttributes(bio, config);
 		BioMart2Bdb mart = new BioMart2Bdb(config, bio, dbEntries, geneSet);
-
+		
+		// Checking if the chromosome names are given
+		if (config.getChromosome().isEmpty()) {
+			chrGiven = false;
+			System.out.println("[INFO]: the chromosome names are not given.");
+		}
+		else 
+			chrGiven = true;
+		
 		System.out.println("Start to download each datasources");
 		// Probe queries
 		try {
 			for (String probe : config.getProbeSet()) {
-				mart.query(probe, true, true);
+				mart.query(probe, true, chrGiven);
 			}
 		} catch (NullPointerException ne) {
 			for (String probe : config.getProbe()) {
 				for (BioMartReference ref : bio.getReference(probe)) {
-					mart.query(ref.getQueryName(), true, true);
+					mart.query(ref.getQueryName(), true, chrGiven);
 				}
 			}
 		}
@@ -217,7 +226,7 @@ public class Main {
 		else
 			datasources = config.getDatasource();
 		for (String ds : datasources) {
-			mart.query(ds, true, true);
+			mart.query(ds, true, chrGiven);
 		}
 		System.out.println(date);
 		System.out.println("Start to the creation of the database, might take some time");
