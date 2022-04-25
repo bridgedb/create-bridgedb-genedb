@@ -199,12 +199,8 @@ public class Main {
 		BioMart2Bdb mart = new BioMart2Bdb(config, bio, dbEntries, geneSet);
 		
 		// Checking if the chromosome names are given
-		if (config.getChromosome().isEmpty()) {
-			chrGiven = false;
-			System.out.println("[INFO]: the chromosome names are not given.");
-		}
-		else 
-			chrGiven = true;
+		chrGiven = !config.getChromosome().isEmpty();
+		if (!chrGiven) System.out.println("[INFO]: the chromosome names are not given.");
 		
 		System.out.println("Start to download each datasources");
 		// Probe queries
