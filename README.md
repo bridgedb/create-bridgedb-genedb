@@ -36,29 +36,29 @@ java -jar BioMart2BridgeDb.jar <configFile> <outputPath> <oldDB> <inclusive>
 List of default config files:
 ============
 
-Configuration files can be found in https://github.com/bridgedb/create-bridgedb-genedb-config/tree/master/resource .
+Configuration files can be found in https://github.com/bridgedb/create-bridgedb-genedb-config/tree/master/configFiles.
 
-Example: [Bos taurus config file](https://raw.githubusercontent.com/bridgedb/create-bridgedb-genedb-config/master/resource/BosTaurus.config)
+Example: [Arabidopsis thaliana config file](https://github.com/bridgedb/create-bridgedb-genedb-config/blob/master/configFiles/plants/v49/At-v49.config)
 
 How to create your own config file
 ============
 * Give the version of Ensembl BioMart to query:
 
-    e.g: http://www.ensembl.org/biomart/, http://oct2014.archive.ensembl.org/biomart/,	http://metazoa.ensembl.org/biomart/
+    e.g: http://www.ensembl.org/biomart/, http://oct2014.archive.ensembl.org/biomart/,	http://nov2020-metazoa.ensembl.org/biomart/
 
-    **endpoint**=http://plants.ensembl.org/biomart/
+    **endpoint**=https://nov2020-plants.ensembl.org/biomart/
     
-    You can find an overview of releases in the [Ensembl Archive](http://www.ensembl.org/info/website/archives/index.html).
+    You can find an overview of releases in the [Ensembl Archive](http://www.ensembl.org/info/website/archives/index.html), [Metazoa Archive](https://metazoa.ensembl.org/index.html), [Plants Archive](https://plants.ensembl.org/index.html), [Fungi Archive](https://fungi.ensembl.org/index.html).
 
-* MartRegistry can be found there:
+* MartRegistry for plants v49 can be found here:
     
-    http://plants.ensembl.org/biomart/martservice?type=registry
+    https://nov2020-plants.ensembl.org/biomart/martservice?type=registry
 
-    e.g: protists_mart_27, metazoa_mart_27, default
+    e.g: plants_mart, metazoa_mart, default
 
-    **schema**=plants_mart_27
+    **schema**=plants_mart
 
-* Code name of the species: http://www.ensembl.org/biomart/martservice?type=datasets&mart=ENSEMBL_MART_ENSEMBL
+* Code name of the animal species: http://www.ensembl.org/biomart/martservice?type=datasets&mart=ENSEMBL_MART_ENSEMBL, [Metazoa v49](https://nov2020-metazoa.ensembl.org/biomart/martservice?type=datasets&mart=metazoa_mart), [Plants v49](https://nov2020-plants.ensembl.org/biomart/martservice?type=datasets&mart=plants_mart) and, [Fungi v49](https://nov2020-fungi.ensembl.org/biomart/martservice?type=datasets&mart=fungi_mart)
 
     **species**=athaliana_eg_gene
 
@@ -68,17 +68,20 @@ How to create your own config file
 
 * The name of the file .bridge created
 
-    **file_name**=At_Derby_Ensembl_Plant_28
+    **file_name**=At_Derby_Ensembl_Plant_49
 
-* The different data source code name can be found like there:
+* The different data source code name for *Arabidopsis thaliana* can be found here:
 
-    http://plants.ensembl.org/biomart/martservice?type=attributes&mart=plants_mart_27&dataset=athaliana_eg_gene
+    https://nov2020-plants.ensembl.org/biomart/martservice?type=attributes&mart=plants_mart&dataset=athaliana_eg_gene
 
-    **probe_set**=affy_ath1_121501
-    **gene_datasource**=refseq_mrna,refseq_ncrna,refseq_peptide,uniprot_sptrembl,pdb,tair_locus,go_accession,unigene,entrezgene,wikigene_id,nasc_gene_id,uniprot_swissprot_accession
+    **probe_datasource**=Affy,Agilent
+	**probe_set**=affy_aragene,affy_ath1_121501,agilent_g2519f_015059,agilent_g2519f_021169,agilent_g4136a_011839,agilent_g4136b_013324,agilent_g4142a_012600
+	**gene_datasource**=entrezgene_id,go_id,mirbase_accession,mirbase_id,pdb,refseq_dna,refseq_peptide,uniprotsptrembl,uniprotswissprot,tair_locus,nasc_gene_id
+	
+	
+* Optional filters (chromosome list) for *Arabidopsis thaliana* can be found here:
+	https://nov2020-plants.ensembl.org/biomart/martservice?type=filters&dataset=athaliana_eg_gene
 
-* Optional filters (chromosome list)
-
-    e.g: **chromosome_name**=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,X,MT
+    e.g: **chromosome_name**=1,2,3,4,5,Pt,Mt
  
-    http://may2015.archive.ensembl.org/biomart/martservice?type=filters&dataset=btaurus_gene_ensembl
+    
