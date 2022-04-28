@@ -53,7 +53,7 @@ public class Main {
 	 * configuration file arg2: location for the new database arg3: (optional)
 	 * directory of the old database - run QC arg4: (optional) use inclusive
 	 * BridgeDb list
-	 * 
+	 *
 	 * @param args
 	 * @throws ClassNotFoundException
 	 * @throws IDMapperException
@@ -66,7 +66,7 @@ public class Main {
 		File dir = null;
 		String path = null;
 		String pathOld = null;
-//		Boolean qc = false;	
+//		Boolean qc = false;
 //		Boolean inclusive = false;
 
 		switch (args.length) {
@@ -171,7 +171,7 @@ public class Main {
 
 	/**
 	 * Run the creation of the new database
-	 * 
+	 *
 	 * @param config         Configuration file for this species
 	 * @param path           A pathname string for the new generated database
 	 * @param inducle_Filter If true, select only the datasources form the BridgeDb
@@ -197,15 +197,11 @@ public class Main {
 		// Query the BioMart attributes for probes ids.
 		QueryBioMart.loadBiomartAttributes(bio, config);
 		BioMart2Bdb mart = new BioMart2Bdb(config, bio, dbEntries, geneSet);
-		
+
 		// Checking if the chromosome names are given
-		if (config.getChromosome().isEmpty()) {
-			chrGiven = false;
-			System.out.println("[INFO]: the chromosome names are not given.");
-		}
-		else 
-			chrGiven = true;
-		
+		chrGiven = !config.getChromosome().isEmpty();
+		if (!chrGiven) System.out.println("[INFO]: the chromosome names are not given.");
+
 		System.out.println("Start to download each datasources");
 		// Probe queries
 		try {
@@ -236,7 +232,7 @@ public class Main {
 
 	/**
 	 * Run the creation of the QC & WP reports of the new database
-	 * 
+	 *
 	 * @param allSpecies If true create the report with all the outdated ids for all
 	 *                   the species of Wikipathways
 	 * @param pathOld    A pathname string for the previous databases
@@ -275,7 +271,7 @@ public class Main {
 	 * Run the Quality Control between the previous database and the new generated
 	 * database.<br>
 	 * Create the .qc file at the location provided
-	 * 
+	 *
 	 * @param oldDB  File - location - of the previous database
 	 * @param path   Path of new generated database
 	 * @param dbName Filename of the new generated database
