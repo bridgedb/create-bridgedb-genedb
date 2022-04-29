@@ -31,6 +31,7 @@ public class BioMartAttributes {
 	public void init() {
 		try {
 			InputStream is = BioMartAttributes.class.getClassLoader().getResourceAsStream("BioMartSources.tsv");
+			if (is == null) System.out.println("[Error]: the BioMartSources.tsv is not present in src/main/resource/");
 			loadAnInputStream(is);
 		} catch (IOException ex) {
 			throw new Error(ex);
