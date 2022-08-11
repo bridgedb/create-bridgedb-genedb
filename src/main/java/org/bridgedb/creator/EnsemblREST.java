@@ -51,13 +51,15 @@ public class EnsemblREST {
 
 	public static void main(String[] args) throws Exception {
 		DataSourceTxt.init(); // Initialize BrideDb data source
-
-		File dir = new File(args[0]);
-		String path = args[1];
+		
+		String DATASOURCENAME = args[0];
+		String VERSION = args[1];
+		File dir = new File(args[2]);
+		String path = args[3];
 		String pathOld = null;
 		Boolean qc = false;
-		if (args.length > 2) {
-			pathOld = args[2];
+		if (args.length > 4) {
+			pathOld = args[4];
 			qc = true;
 		}
 		if (dir.isDirectory()) {
