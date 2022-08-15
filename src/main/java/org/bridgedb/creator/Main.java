@@ -64,8 +64,8 @@ public class Main {
 		logInit();
 		DataSourceTxt.init(); // Initialize BrideDb data source
 		File dir = null;
-		String DATASOURCENAME = null;
-		String VERSION = null;
+		String datasourceName = null;
+		String version = null;
 		String path = null;
 		String pathOld = null;
 //		Boolean qc = false;
@@ -85,8 +85,8 @@ public class Main {
 			printUsage();
 			break;
 		case 4:
-			DATASOURCENAME = args[0];
-			VERSION = args[1];
+			datasourceName = args[0];
+			version = args[1];
 			dir = new File(args[2]);
 			path = args[3];
 			if (dir.isDirectory()) {
@@ -103,21 +103,21 @@ public class Main {
 				File[] listFiles = dir.listFiles(textFilter);
 				for (File f : listFiles) {
 					SpeciesConfiguration config = new SpeciesConfiguration(f.getAbsolutePath());
-					runDB(config, path, inclusive, DATASOURCENAME, VERSION);
+					runDB(config, path, inclusive, datasourceName, version);
 					if (qc)
 						report(false, pathOld, path, config);
 				}
 			} else {
 				SpeciesConfiguration config = new SpeciesConfiguration(dir.getAbsolutePath());
 
-				runDB(config, path, inclusive, DATASOURCENAME, VERSION);
+				runDB(config, path, inclusive, datasourceName, version);
 				if (qc)
 					report(false, pathOld, path, config);
 			}
 			break;
 		case 5:
-			DATASOURCENAME = args[0];
-			VERSION = args[1];
+			datasourceName = args[0];
+			version = args[1];
 			dir = new File(args[2]);
 			path = args[3];
 			pathOld = args[4];
@@ -136,13 +136,13 @@ public class Main {
 				File[] listFiles = dir.listFiles(textFilter);
 				for (File f : listFiles) {
 					SpeciesConfiguration config = new SpeciesConfiguration(f.getAbsolutePath());
-					runDB(config, path, inclusive, DATASOURCENAME, VERSION);
+					runDB(config, path, inclusive, datasourceName, version);
 					if (qc)
 						report(false, pathOld, path, config);
 				}
 			} else {
 				SpeciesConfiguration config = new SpeciesConfiguration(dir.getAbsolutePath());
-				runDB(config, path, inclusive, DATASOURCENAME, VERSION);
+				runDB(config, path, inclusive, datasourceName, version);
 				if (qc)
 					report(false, pathOld, path, config);
 			}
@@ -161,7 +161,7 @@ public class Main {
 	 * @throws ClassNotFoundException
 	 * @throws IDMapperException
 	 */
-	public static void runDB(SpeciesConfiguration config, String path, Boolean inducle_Filter, String DATASOURCENAME, String VERSION)
+	public static void runDB(SpeciesConfiguration config, String path, Boolean inducle_Filter, String datasourceName, String version)
 			throws ClassNotFoundException, IDMapperException {
 
 		Date date = new Date();
