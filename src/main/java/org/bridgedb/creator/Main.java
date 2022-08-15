@@ -207,7 +207,7 @@ public class Main {
 		}
 		System.out.println(date);
 		System.out.println("Start to the creation of the database, might take some time");
-		mart.bridgedbCreator(dbEntries, geneSet, path, DATASOURCENAME, VERSION);
+		mart.bridgedbCreator(dbEntries, geneSet, path, datasourceName, version);
 		System.out.println(date);
 	}
 
