@@ -52,8 +52,8 @@ public class EnsemblREST {
 	public static void main(String[] args) throws Exception {
 		DataSourceTxt.init(); // Initialize BrideDb data source
 		
-		String DATASOURCENAME = args[0];
-		String VERSION = args[1];
+		String datasourceName = args[0];
+		String version = args[1];
 		File dir = new File(args[2]);
 		String path = args[3];
 		String pathOld = null;
