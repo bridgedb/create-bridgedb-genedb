@@ -123,13 +123,13 @@ public class BioMart2Bdb {
 		br.close();
 	}
 
-	public void bridgedbCreator(Map<Xref, HashSet<Xref>> dbEntries, Map<Xref, GeneAttributes> geneSet, String path, String DATASOURCENAME, String VERSION)
+	public void bridgedbCreator(Map<Xref, HashSet<Xref>> dbEntries, Map<Xref, GeneAttributes> geneSet, String path, String datasourceName, String version)
 			throws IDMapperException, ClassNotFoundException {
 
 		BridgeDbCreator creator = new BridgeDbCreator(dbEntries);
 		creator.setOutputFilePath(path + config.getFileName());
-		creator.setDbSourceName(DATASOURCENAME);
-		creator.setDbVersion(VERSION);
+		creator.setDbSourceName(datasourceName);
+		creator.setDbVersion(version);
 		creator.setDbSeries(config.getDBName());
 		creator.setDbDataType("GeneProduct");
 
