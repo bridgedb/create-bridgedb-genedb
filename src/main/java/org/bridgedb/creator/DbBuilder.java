@@ -41,7 +41,7 @@ import org.bridgedb.Xref;
 import org.bridgedb.rdb.construct.DBConnector;
 import org.bridgedb.rdb.construct.DataDerby;
 import org.bridgedb.rdb.construct.GdbConstruct;
-import org.bridgedb.rdb.construct.GdbConstructImpl3;
+import org.bridgedb.rdb.construct.GdbConstructImpl4;
 
 /**
  * The class that performs the actual work on the database, used by
@@ -71,7 +71,7 @@ public class DbBuilder {
 	 * @throws IDMapperException when it cannot write to the output file
 	 */
 	public void createNewDb() throws IDMapperException {
-		newDb = new GdbConstructImpl3(creator.getOutputFilePath(), new DataDerby(), DBConnector.PROP_RECREATE);
+		newDb = new GdbConstructImpl4(creator.getOutputFilePath(), new DataDerby(), DBConnector.PROP_RECREATE);
 		newDb.createGdbTables();
 		newDb.preInsert();
 

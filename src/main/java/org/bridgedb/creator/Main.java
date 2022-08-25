@@ -64,6 +64,8 @@ public class Main {
 		logInit();
 		DataSourceTxt.init(); // Initialize BrideDb data source
 		File dir = null;
+		String datasourceName = null;
+		String version = null;
 		String path = null;
 		String pathOld = null;
 //		Boolean qc = false;
@@ -77,8 +79,16 @@ public class Main {
 			printUsage();
 			break;
 		case 2:
-			dir = new File(args[0]);
-			path = args[1];
+			printUsage();
+			break;
+		case 3:
+			printUsage();
+			break;
+		case 4:
+			datasourceName = args[0];
+			version = args[1];
+			dir = new File(args[2]);
+			path = args[3];
 			if (dir.isDirectory()) {
 				FilenameFilter textFilter = new FilenameFilter() {
 					public boolean accept(File dir, String name) {
@@ -93,22 +103,24 @@ public class Main {
 				File[] listFiles = dir.listFiles(textFilter);
 				for (File f : listFiles) {
 					SpeciesConfiguration config = new SpeciesConfiguration(f.getAbsolutePath());
-					runDB(config, path, inclusive);
+					runDB(config, path, inclusive, datasourceName, version);
 					if (qc)
 						report(false, pathOld, path, config);
 				}
 			} else {
 				SpeciesConfiguration config = new SpeciesConfiguration(dir.getAbsolutePath());
 
-				runDB(config, path, inclusive);
+				runDB(config, path, inclusive, datasourceName, version);
 				if (qc)
 					report(false, pathOld, path, config);
 			}
 			break;
-		case 3:
-			dir = new File(args[0]);
-			path = args[1];
-			pathOld = args[2];
+		case 5:
+			datasourceName = args[0];
+			version = args[1];
+			dir = new File(args[2]);
+			path = args[3];
+			pathOld = args[4];
 			qc = true;
 			if (dir.isDirectory()) {
 				FilenameFilter textFilter = new FilenameFilter() {
@@ -124,44 +136,13 @@ public class Main {
 				File[] listFiles = dir.listFiles(textFilter);
 				for (File f : listFiles) {
 					SpeciesConfiguration config = new SpeciesConfiguration(f.getAbsolutePath());
-					runDB(config, path, inclusive);
+					runDB(config, path, inclusive, datasourceName, version);
 					if (qc)
 						report(false, pathOld, path, config);
 				}
 			} else {
 				SpeciesConfiguration config = new SpeciesConfiguration(dir.getAbsolutePath());
-				runDB(config, path, inclusive);
-				if (qc)
-					report(false, pathOld, path, config);
-			}
-			break;
-		case 4:
-			dir = new File(args[0]);
-			path = args[1];
-			pathOld = args[2];
-			qc = true;
-			inclusive = true;
-			if (dir.isDirectory()) {
-				FilenameFilter textFilter = new FilenameFilter() {
-					public boolean accept(File dir, String name) {
-						String lowercaseName = name.toLowerCase();
-						if (lowercaseName.endsWith(".config")) {
-							return true;
-						} else {
-							return false;
-						}
-					}
-				};
-				File[] listFiles = dir.listFiles(textFilter);
-				for (File f : listFiles) {
-					SpeciesConfiguration config = new SpeciesConfiguration(f.getAbsolutePath());
-					runDB(config, path, inclusive);
-					if (qc)
-						report(false, pathOld, path, config);
-				}
-			} else {
-				SpeciesConfiguration config = new SpeciesConfiguration(dir.getAbsolutePath());
-				runDB(config, path, inclusive);
+				runDB(config, path, inclusive, datasourceName, version);
 				if (qc)
 					report(false, pathOld, path, config);
 			}
@@ -180,7 +161,7 @@ public class Main {
 	 * @throws ClassNotFoundException
 	 * @throws IDMapperException
 	 */
-	public static void runDB(SpeciesConfiguration config, String path, Boolean inducle_Filter)
+	public static void runDB(SpeciesConfiguration config, String path, Boolean inducle_Filter, String datasourceName, String version)
 			throws ClassNotFoundException, IDMapperException {
 
 		Date date = new Date();
@@ -226,7 +207,7 @@ public class Main {
 		}
 		System.out.println(date);
 		System.out.println("Start to the creation of the database, might take some time");
-		mart.bridgedbCreator(dbEntries, geneSet, path);
+		mart.bridgedbCreator(dbEntries, geneSet, path, datasourceName, version);
 		System.out.println(date);
 	}
 
