@@ -69,22 +69,22 @@
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.bio</artifactId>
-			<version>3.0.27</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb</artifactId>
-			<version>3.0.27</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb.construct</artifactId>
-			<version>3.0.27</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.tools.qc</artifactId>
-			<version>3.0.27</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>
