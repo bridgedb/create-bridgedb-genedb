@@ -22,16 +22,12 @@ Run
 In your terminal:
 
 ```shell
-java -jar BioMart2BridgeDb.jar <configFile> <outputPath> <oldDB> <inclusive>
+java -jar BioMart2BridgeDb.jar $DATASOURCENAME $VERSION $CONFIG_FILE $PATH_FOR_NEW_DB
 ```
-
-- \<configFile\>: location of configuration file
-
-- \<outputPath\>: Path for the new database
-
-- \<oldDB\>: (optional) directory of the old database - run QC
-
-- \<inclusive\>: (optional) use inclusive BridgeDb list
+- \<DATASOURCENAME\>: Database name (e.g. Ensembl, EnsemblGenomes)
+- \<VERSION\>: Database version (e.g. 111)
+- \<CONFIG_FILE\>: configuration file
+- \<PATH_FOR_NEW_DB\>: Path for the new database
 
 List of default config files:
 ============
