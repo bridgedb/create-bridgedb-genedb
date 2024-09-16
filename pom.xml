@@ -69,22 +69,44 @@
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.bio</artifactId>
-			<version>3.0.6</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb</artifactId>
-			<version>3.0.6</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb.construct</artifactId>
-			<version>3.0.6</version>
+			<version>3.0.27-java8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.tools.qc</artifactId>
-			<version>3.0.6</version>
+			<version>3.0.27</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.bridgedb</groupId>
+					<artifactId>org.bridgedb</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.bridgedb</groupId>
+					<artifactId>org.bridgedb.bio</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.bridgedb</groupId>
+					<artifactId>org.bridgedb.rdb</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.bridgedb</groupId>
+					<artifactId>org.bridgedb.rdb.construct</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.apache.derby</groupId>
+					<artifactId>derbyshared</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>
@@ -98,5 +120,10 @@
 			<artifactId>derbyclient</artifactId>
 			<version>10.4.2.0</version>
 		</dependency>
+                <dependency>
+                        <groupId>org.apache.derby</groupId>
+                        <artifactId>derbytools</artifactId>
+                        <version>10.4.2.0</version>
+                </dependency>
 	</dependencies>
 </project>
