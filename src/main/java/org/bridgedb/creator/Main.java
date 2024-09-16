@@ -63,6 +63,7 @@ public class Main {
 
 		logInit();
 		DataSourceTxt.init(); // Initialize BrideDb data source
+		Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
 		File dir = null;
 		String datasourceName = null;
 		String version = null;
