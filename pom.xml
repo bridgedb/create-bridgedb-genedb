@@ -11,7 +11,9 @@
 	<name>Create Ensembl Bridge bundle</name>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
+                <bridgedb.version>3.0.29-java8-SNAPSHOT</bridgedb.version>
+                <derby.version>10.4.2.0</derby.version>
 	</properties>
 
 	<build>
@@ -20,9 +22,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.13.0</version>
 				<configuration>
-					<release>11</release>
+					<release>8</release>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -69,61 +71,39 @@
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.bio</artifactId>
-			<version>3.0.27-java8</version>
+			<version>${bridgedb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb</artifactId>
-			<version>3.0.27-java8</version>
+			<version>${bridgedb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.rdb.construct</artifactId>
-			<version>3.0.27-java8</version>
+			<version>${bridgedb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bridgedb</groupId>
 			<artifactId>org.bridgedb.tools.qc</artifactId>
-			<version>3.0.27</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.bridgedb</groupId>
-					<artifactId>org.bridgedb</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.bridgedb</groupId>
-					<artifactId>org.bridgedb.bio</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.bridgedb</groupId>
-					<artifactId>org.bridgedb.rdb</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.bridgedb</groupId>
-					<artifactId>org.bridgedb.rdb.construct</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.derby</groupId>
-					<artifactId>derbyshared</artifactId>
-				</exclusion>
-			</exclusions>
+			<version>${bridgedb.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derby</artifactId>
-			<version>10.4.2.0</version>
+			<version>${derby.version}</version>
 			<type>jar</type>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.derby</groupId>
 			<artifactId>derbyclient</artifactId>
-			<version>10.4.2.0</version>
+			<version>${derby.version}</version>
 		</dependency>
                 <dependency>
                         <groupId>org.apache.derby</groupId>
                         <artifactId>derbytools</artifactId>
-                        <version>10.4.2.0</version>
+                        <version>${derby.version}</version>
                 </dependency>
 	</dependencies>
 </project>
