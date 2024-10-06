@@ -106,4 +106,19 @@
                         <version>${derby.version}</version>
                 </dependency>
 	</dependencies>
+
+    <repositories>
+        <repository>
+            <id>sonatypeSnapshots</id>
+            <name>Sonatype Snapshots</name>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+    </repositories>
+
 </project>
