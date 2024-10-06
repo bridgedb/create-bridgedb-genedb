@@ -8,7 +8,7 @@ A script to create a gene-focussed BrigdeDb database based on Ensembl BioMART.
 Installation
 ============
 
-Java 11 is required.
+Java 8 is required for PathVisio 3.x support.
 
 Compile the code with:
 
