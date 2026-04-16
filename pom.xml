@@ -12,7 +12,7 @@
 
 	<properties>
 		<java.version>8</java.version>
-                <bridgedb.version>3.0.29-java8-SNAPSHOT</bridgedb.version>
+                <bridgedb.version>3.0.30-java8</bridgedb.version>
                 <derby.version>10.4.2.0</derby.version>
 	</properties>
 
